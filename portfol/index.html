@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas - Portfólio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .name {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .postagem {
+            font-weight: bold;
+        }
+
+        .box i {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .sobre .row .habilidades {
+            flex: 1 1 48rem;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 41px;
+        }
+
+        .sobre .row .habilidades .box {
+            width: 150px;
+            text-align: center;
+            padding: 20px;
+            margin: 15px;
+            border-radius: 10px;
+            background: #607567;
+            box-shadow: 0 4px 8px rgba(68, 62, 62, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .sobre .row .habilidades .box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(54, 48, 48, 0.);
+        }
+
+        .sobre .row .habilidades .box span {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffffff;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .sobre .row .habilidades .box h3 {
+            font-size: 1.2rem;
+            color: #ffffff;
+            margin-top: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- FIM DA SEÇÃO MENU -->
+
+    <!-- MENU BURGUER -->
+    <div id="menu" class="fas fa-bars"></div>
+
+    <!-- HOME -->
+    <section class="home" id="home">
+        <div class="avatar-user">
+            <img src="imagens/fotolucas.png" alt="Lucas Fontes">
+        </div>
+        <div class="welcome-text">
+            <h3>Bem-vindo ao meu Portfólio!</h3>
+            <h1>Eu sou <span>Lucas Fontes</span></h1>
+            <h3>Desenvolvedor Front-End</h3>
+            <p>Cursando Engenharia de Software, na universidade Cruzeiro do Sul.</p>
+            <p>Cursos de especializações em front-end.</p>
+        </div>
+        <div class="skills-marquee">
+            <div class="marquee">
+                <i class="fab fa-python"></i>      
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+                <i class="fab fa-git-alt"></i>
+                <i class="fab fa-figma"></i>
+                <i class="fas fa-file-excel"></i>
+                
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SOBRE -->
+    <section class="sobre" id="sobre">
+        <h1 class="heading"><span>Quem sou </span>Eu?</h1>
+        <div class="row">
+            <div class="info">
+                <div class="info-item">
+                    <h3><span>Nome:</span> Lucas Fontes</h3>
+                </div>
+                <div class="info-item">
+                    <h3><span>Idade:</span> 26 anos</h3>
+                </div>
+                <div class="info-item">
+                    <h3><span>Status:</span> Casado</h3>
+                </div>
+                <div class="info-item">
+                    <h3><span>Formação:</span> Engenharia de Software</h3>
+                </div>
+                <div class="info-item">
+                    <h3><span>Profissão:</span> Desenvolvedor Front-End</h3>
+                </div>
+                <div class="info-item">
+                    <h3><span>Hobbies:</span> Aquarismo - Marinho | Viagens | Jogos - RPG, MMORPG, FPS</h3>
+                </div>
+                <div class="social-icons">
+                    <h3><span>Redes Profissionais:</span>
+                        <a href="https://github.com/Lucasfontes98" class="social-icon github"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/lucas-fontes-628712213/" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    </h3>
+                </div>
+                <a href="documentos/cs-lucas.pdf"><button class="btn">Download CV <i class="fas fa-download"></i></button></a>
+            </div>
+            <div class="habilidades">                
+                <div class="box" data-info="VBA, Power Query, ETL, Fórmulas.">
+                    <i class="fas fa-file-excel"></i>
+                    <span>Excel</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="box" data-info="Desenvolvimento de lógica.">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 50%;"></div>
+                    </div>
+                </div>                
+                <div class="box" data-info="Manipulação de dados e extração de dados.">
+                    <i class="fas fa-database"></i>
+                    <span>SQL</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 35%;"></div>
+                    </div>
+                </div>                
+                <div class="box" data-info="Estrutura web, formularios e inputs, multimídia e acessibilidades.">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 100%;"></div>
+                    </div>
+                </div>
+                <div class="box" data-info="Desenvolvimento de estilos.">
+                    <i class="fab fa-css3-alt"></i>
+                    <span>CSS</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="box" data-info="Desenvolvimento de lógica, VueJs, React.">
+                    <i class="fab fa-js"></i>
+                    <span>JS</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="box" data-info="Versionamento de software.">
+                    <i class="fab fa-git-alt"></i>
+                    <span>GIT</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+                </div>                
+                <div class="box" data-info="Desenvolvimento de layout de Dashboards.">
+                    <i class="fab fa-figma"></i>
+                    <span>Figma</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 30%;"></div>
+                    </div>
+                </div>                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio" id="portfolio">
+        <h1 class="heading"> Meus <span>Certificados</span> </h1>
+        <div class="box-conteudo">
+            <div class="box">                
+                    <img src="" alt=""></a>
+            </div>
+            <div class="box">
+                <a href="">
+                    <img src="" alt=""></a>
+            </div>
+            <div class="box">
+                <a href="">
+                    <img src="" alt=""></a>
+            </div>
+            <div class="box">
+                <a href="">
+                    <img src="" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="contato" id="contato">
+        <h1 class="heading"> <span>Onde me</span> Encontrar? </h1>
+        <div class="row">
+            <div class="conteudo">
+                <h3 class="title">Meus contatos:</h3>
+                <div class="info">
+                    <h3><i class="fas fa-envelope"></i> <a href="Email:lucas98_2009@hotmail.com" style="color: white;">lucas98_2009@hotmail.com</a></h3>
+                    <h3><i class="fas fa-phone"></i> <a href="https://wa.me/5541989014093" target="_blank" style="color: white;">41 989014093</a></h3>
+                    <h3> <i class="fas fa-map-marker-alt"></i> São José dos Pinhais - PR </h3>
+                </div>
+            </div>
+            <form action="">
+                <input type="text" placeholder="Seu nome" class="box">
+                <input type="email" placeholder="Seu email" class="box">
+                <input type="text" placeholder="Projeto desejado" class="box">
+                <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="Detalhes"></textarea>
+                <button type="submit" class="btn"> Enviar Mensagem <i class="fas fa-paper-plane"></i> </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <p>Lucas Fontes &copy; 2024 Portfólio. Todos os direitos reservados. </p>
+        </div>
+    </footer>
+
+    <!-- Modal para habilidades -->
+    <div id="skillModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Aplicação de Habilidades:</h2>
+            <div id="skillInfo">Detalhes da habilidade serão exibidos aqui...</div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Mostra o modal com informações quando uma habilidade é clicada
+            $('.habilidades .box').click(function () {
+                var info = $(this).data('info'); // Pega a informação do atributo data-info
+                $('#skillInfo').text(info); // Atualiza o texto dentro do modal com a informação
+                $('#skillModal').css('display', 'block'); // Mostra o modal
+            });
+
+            // Fecha o modal quando o ícone de fechar é clicado
+            $('.close').click(function () {
+                $('#skillModal').css('display', 'none');
+            });
+
+            // Fecha o modal quando clicado fora dele
+            $(window).click(function (event) {
+                if ($(event.target).is('#skillModal')) {
+                    $('#skillModal').css('display', 'none');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

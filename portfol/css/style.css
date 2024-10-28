@@ -1,0 +1,770 @@
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100&display=swap");
+
+:root {
+  --blue: #3d664b;
+}
+
+* {
+  font-family: "Azeret Mono", monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.5s linear;
+}
+
+*::selection {
+  background: linear-gradient(135deg, #0a0c0f, #607567);
+}
+
+html {
+  font-size: 62%;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 1.4rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #424141;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--blue);
+}
+
+body {
+  background: linear-gradient(135deg, #0a0c0f, #607567);
+  overflow-x: hidden;
+  padding-top: 70px; /* Adiciona espaço no topo do corpo para evitar sobreposição com o cabeçalho */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #607567;
+  width: 100%;
+  position: fixed; /* Fixa o cabeçalho no topo */
+  top: 0; /* Posiciona no topo da página */
+  left: 0; /* Alinha à esquerda da página */
+  z-index: 1000; /* Garante que o cabeçalho fique acima de outros conteúdos */
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  padding: 0 20px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: var(--blue);
+}
+
+.avatar-user {
+  display: flex;
+  align-items: center;
+}
+
+.home {
+  display: flex;
+  flex-direction: column; /* Muda a direção do flex para coluna */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  justify-content: center; /* Centraliza os itens verticalmente */
+  padding: 2rem;
+  text-align: center;
+}
+
+.welcome-text {
+  max-width: 80%; /* Ajusta a largura máxima do texto */
+}
+
+.home h3,
+.home h1,
+.home p {
+  color: #fff;
+}
+
+.home h1 span {
+  color: var(--blue);
+}
+
+.avatar-user img {
+  height: 40rem; /* Aumenta a altura da imagem */
+  width: 40rem; /* Aumenta a largura da imagem */
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+  margin-bottom: 4rem; /* Adiciona espaço entre a imagem e o texto */
+}
+
+.home .avatar-user img {
+  height: 25rem; /* Aumenta a altura da imagem */
+  width: 25rem; /* Aumenta a largura da imagem */
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/*  MENU BURGUER */
+#menu {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  background: #607567;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2.5rem;
+  padding: 1rem 1.5rem;
+  z-index: 1000;
+  display: none;
+}
+
+section {
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  padding: 0 15rem;
+}
+
+.home h3 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 4rem;
+}
+
+.home h1 {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.home h1 span {
+  color: var(--blue);
+}
+
+.home p {
+  color: #fff;
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+
+.btn {
+  padding: 0.7rem 2rem;
+  background: #607567;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 3rem;
+  font-size: 2rem;
+  border-radius: 5rem;
+}
+
+.btn i {
+  padding: 0 0.5rem;
+  font-size: 1.8rem;
+}
+
+.btn:hover {
+  background-color: #607567;
+}
+
+/* SEÇÃO SOBRE */
+.sobre,
+.portfolio,
+.contato {
+  background: linear-gradient(
+    135deg,
+    #0a0c0f,
+    #40584b
+  ); /* Degradê para o fundo do corpo */
+  padding: 60px 20px;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 4rem;
+  color: #fff;
+}
+
+.heading span {
+  color: var(--blue);
+}
+
+.sobre .row,
+.portfolio .box-conteudo,
+.contato .row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.sobre .info {
+  flex: 1 1 35%; /* Ajuste conforme necessário */
+  padding: 20px;
+  /*background: #587a9c;*/
+  border-radius: 10px;
+  margin-top: 55px; /* Adicione esta linha para mover a caixa para baixo */
+  /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+  color: #607567;
+  margin-left: 10px; /* Adicione ou ajuste esta linha para mover a caixa mais para a direita */
+}
+
+.sobre .info-item {
+  margin-bottom: 20px;
+}
+
+.sobre .info-item h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #fff;
+  letter-spacing: 0.1em; /* Ajuste este valor conforme necessário */
+}
+
+.sobre .info-item h3 span {
+  color: #607567;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.sobre .social-icons {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.sobre .social-icons h3 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.sobre .social-icons h3 span {
+  margin-right: 10px; /* Espaçamento entre o texto e os ícones */
+}
+
+.social-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border-radius: 5px; /* Make the icons square */
+}
+
+.social-icon.github {
+  background-color: #333; /* GitHub color */
+}
+
+.social-icon.github:hover {
+  background-color: #555;
+}
+
+.social-icon.linkedin {
+  background-color: #0e76a8; /* LinkedIn color */
+}
+
+.social-icon.linkedin:hover {
+  background-color: #005582;
+}
+
+.habilidades {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0;
+}
+
+.habilidades .box {
+  width: 150px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background: #607567;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.habilidades .box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background: #607567;
+}
+
+.habilidades .box i {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.habilidades .box span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  display: block;
+}
+
+.habilidades .box .progress-bar {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 10px;
+  margin-top: 10px;
+}
+
+.habilidades .box .progress {
+  height: 100%;
+  background-color: #4a724a;
+  border-radius: 5px;
+}
+
+/* SEÇÃO PORTFOLIO */
+.portfolio .box-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.portfolio .box-conteudo .box {
+  height: 30rem;
+  width: 36rem;
+  border-radius: 1rem;
+  margin: 2rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.portfolio .box-conteudo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.portfolio .box-conteudo .box:hover img {
+  transform: scale(1.2);
+}
+/* Estilo para a barra de progresso externa */
+.habilidades .progress-bar {
+  background-color: #415e43; /* Cor de fundo da barra externa */
+  border-radius: 0; /* Cantos quadrados */
+  overflow: hidden; /* Mantém o preenchimento interno dentro dos limites */
+  height: 20px; /* Altura fixa para a barra de progresso */
+  margin-top: 5px; /* Espaço acima da barra */
+  position: relative; /* Para posicionamento absoluto do preenchimento */
+}
+
+/* Estilo para a barra de progresso interna */
+.habilidades .progress {
+  background-color: #297463; /* Cor de preenchimento da barra */
+  height: 100%;
+  width: 0; /* Largura inicial para animação */
+  border-radius: 0; /* Cantos quadrados */
+  background-image: repeating-linear-gradient(
+    90deg,
+    #0e0e0e 0px,
+    #3e773e 9px,
+    #30412f 9px,
+    #798c9e 10px
+  ); /* Efeito quadriculado com bordas brancas sutis */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra interna para efeito 3D */
+  transition: width 0.5s ease-in-out; /* Transição suave para a largura */
+}
+
+/* Seção Contato */
+.contato {
+  background: linear-gradient(
+    135deg,
+    #0a0c0f,
+    #607567
+  ); /* Degradê para o fundo do corpo */
+  padding: 60px 20px;
+  color: #fff;
+}
+
+.contato .heading {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 4rem;
+  color: #fff;
+}
+
+.contato .heading span {
+  color: var(--blue);
+}
+
+.contato .row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contato .conteudo {
+  flex: 1 1 25%; /* Ajuste o tamanho do box */
+  padding: 20px;
+  /*background: #34495e;*/
+  border-radius: 10px;
+  /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+  color: #fff;
+  margin-right: 20px; /* Ajuste o espaçamento à direita */
+  margin-top: 20px; /* Ajuste o espaçamento acima */
+  margin-left: 80px;
+}
+
+.contato .conteudo .title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ecf0f1;
+}
+
+.contato .conteudo .info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.contato .conteudo .info h3 i {
+  margin-right: 10px;
+  color: #607567;
+}
+
+.contato .conteudo .info h3 a {
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+.contato .conteudo .info h3 a:hover {
+  text-decoration: underline;
+}
+
+.contato form {
+  flex: 1 1 50%; /* Ajuste o tamanho do form */
+  padding: 20px;
+  background: #607567;
+  border-radius: 10px;
+  box-shadow: #607567;
+  margin-top: 20px; /* Ajuste o espaçamento acima */
+  margin-left: 80px;
+}
+
+.contato form .box {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background: #3f664b;
+  border: none;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.contato form .box::placeholder {
+  color: #bdc3c7;
+}
+
+.contato form .box.message {
+  height: 150px;
+  resize: none;
+}
+
+.contato form .btn {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  background: #658567;
+  border: none;
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.contato form .btn i {
+  margin-left: 10px;
+}
+
+.contato form .btn:hover {
+  background: #607567;
+}
+
+/* SEÇÃO PARA RODA-PÉ */
+.footer {
+  background: #607567;
+  color: #fff;
+  padding: 10px;
+  margin-top: 0px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer p {
+  text-align: center;
+  font-size: 20px;
+  margin: 0;
+}
+
+/*SEÇÂO ICONES DE REDES SOCIAIS*/
+.social-icons .social-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #607567;
+  margin-top: 0px;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px; /* Ícones quadrados */
+  margin-left: 10px;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.social-icon.github {
+  background-color: #333; /* GitHub color */
+}
+
+.social-icon.github:hover {
+  background-color: #555;
+}
+
+.social-icon.linkedin {
+  background-color: #0e76a8; /* LinkedIn color */
+}
+
+.social-icon.linkedin:hover {
+  background-color: #005582;
+}
+
+/* SKILLS MARQUEE */
+.skills-marquee {
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+  margin: 40px auto;
+}
+
+.skills-marquee::before,
+.skills-marquee::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  z-index: 1;
+}
+
+.skills-marquee::before {
+  left: 0;
+  background: linear-gradient(to right, rgb(39, 39, 39) transparent);
+}
+
+.skills-marquee::after {
+  right: 0;
+  background: linear-gradient(to left, rgb(39, 39, 39), transparent);
+}
+
+.marquee {
+  display: flex;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee i {
+  font-size: 3rem;
+  margin: 0 30px;
+  color: #607567;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(19, 18, 18); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #607567;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  font-family: "Calibri", sans-serif;
+  font-size: 22px;
+  color: #000000;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 28px;
+}
+
+.close {
+  color: #000000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: "Arial", sans-serif;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(3, 3, 3);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#saveSkillInfo {
+  background-color: #000000; /* Verde */
+  color: rgb(255, 255, 255);
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-family: "Arial", sans-serif; /* Altera a família da fonte */
+  font-size: 18px; /* Ajuste o tamanho da fonte */
+}
+
+#saveSkillInfo:hover {
+  opacity: 0.8;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+
+  /* ESTILO DA HOME */
+  .home {
+    padding: 1rem 4rem;
+  }
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 991px) {
+  header {
+    left: -120%;
+  }
+
+  #menu {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background: #3b648d;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  @media (max-width: 991px) {
+    #menu {
+      display: block;
+    }
+
+    .navbar {
+      display: none;
+    }
+
+    header.open .navbar {
+      display: block;
+    }
+  }
+
+  @media (max-width: 700px) {
+    html {
+      font-size: 50%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .map-container {
+      margin-top: 0;
+      margin-left: 0;
+      position: relative;
+    }
+  }
+
+  @media (max-width: 400px) {
+    header {
+      width: 100vw;
+    }
+    .heading {
+      margin: 0 3rem;
+    }
+    .sobre .row .habilidades .box {
+      width: 100%;
+    }
+    .portfolio .box-conteudo img {
+      width: 100%;
+    }
+    .contato .row .form {
+      margin: 3rem 0;
+    }
+  }
+}
